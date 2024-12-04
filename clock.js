@@ -1,14 +1,13 @@
-// eslint-disable-next-line no-unused-vars
 function updateClock() {
   const date = new Date();
-  const militaryCheckbox = $("#military");
-  const $clock = $("#clock");
-  const $date = $("#date");
-  const $showDate = $("#showDate");
+  const $militaryCheckbox = document.querySelector("#military");
+  const $clock = document.querySelector("#clock");
+  const $date = document.querySelector("#date");
+  const $showDate = document.querySelector("#showDate");
   const timeDisplayOptions = {
     timeZone: "America/Chicago",
     timeStyle: "long",
-    hour12: !militaryCheckbox.prop("checked"),
+    hour12: !$militaryCheckbox.prop("checked"),
   };
   const dateDisplayOptions = { dateStyle: "full" };
 
