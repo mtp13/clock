@@ -1,12 +1,14 @@
 body {
   background-color: black;
   color: white;
+  font-family: sans-serif;
+  font-size: 16px; /* Set a base font size */
 }
 
 .wrapper {
   margin-right: auto;
   margin-left: auto;
-  max-width: 960px;
+  max-width: 100%;
   padding-right: 10px;
   padding-left: 10px;
 }
@@ -14,20 +16,36 @@ body {
 #date {
   margin: 10px;
   text-align: center;
-  font-size: 24px;
+  font-size: 4rem; /* Adjust as needed */
 }
 
 #clock {
-  margin: 10px;
+  margin: 5vw;
   color: red;
   text-align: center;
-  font-family: monospace;
-  font-size: 48px;
+  font-size: 6rem; /* Adjust as needed */
+  max-width: 100%;
+  white-space: nowrap; /* Prevent wrapping */
+  overflow: hidden; /* Hide overflow text */
+  text-overflow: ellipsis; /* Add ellipsis for overflow text */
 }
 
 #displayOptions {
+  display: none; /* Hide the display options */
   margin: auto;
-  max-width: 150px;
+  max-width: 30%;
   text-align: left;
-  font-size: 12px;
+  font-size: 2rem; /* Adjust as needed */
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 0.5rem;
+}
+
+input[type="checkbox"] {
+  transform: scale(3); /* Adjust the scale value as needed */
+  margin-right: 2rem; /* Increase the margin-right for more space */
 }
