@@ -1,0 +1,8 @@
+{
+  "redirects": [
+    {
+      "source": "/clock",
+      "destination": "https://clock-mike-pullen.vercel.app"
+    }
+  ]
+}
